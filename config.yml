@@ -1,0 +1,18 @@
+interface: em0
+
+ipsec:
+  gateway: 9.9.9.9
+  group: dummy
+  group_pw: dummy
+  user: dummy
+
+relayd:
+  - name: rdp
+    src_port: 3389
+    dst_port: 3389
+    dst_host: 1.1.1.1
+  - name: http
+    src_port: 80
+    dst_port: 80
+    dst_host: 2.2.2.2
+
